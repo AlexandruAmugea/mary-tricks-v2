@@ -1,0 +1,62 @@
+{
+  "name": "marystricks",
+  "version": "1.0.0",
+  "description": "Mary's Tricks",
+  "scripts": {
+    "build": "webpack --config webpack-prod.config.js --colors",
+    "dev": "webpack-dev-server --open --config webpack-dev.config.js --watch --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexandruAmugea/Mary-s-Tricks"
+  },
+  "keywords": [
+    "Bitcoin",
+    "Crypto",
+    "Currency"
+  ],
+  "author": "Alexandru Amugea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexandruAmugea/Mary-s-Tricks/issues"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "rules": {
+      "semi": 2
+    }
+  },
+  "homepage": "https://github.com/AlexandruAmugea/baroka-lp/blob/master/README.md",
+  "devDependencies": {
+    "angular": "^1.4.0",
+    "babel-core": "^6.9.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.9.0",
+    "copy-webpack-plugin": "^4.1.0",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.6.1",
+    "eslint-loader": "^1.3.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^1.1.4",
+    "html-webpack-plugin": "^2.17.0",
+    "node-sass": "^4.1.1",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "angular": "1.4.0",
+    "angular-route": "1.4.0",
+    "babel-polyfill": "^6.9.0",
+    "express": "^4.16.3"
+  }
+}

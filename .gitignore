@@ -1,0 +1,8 @@
+.npm
+*.log
+npm-debug.log*
+node_modules
+_MACOSX
+04 Web
+psd
+.idea

@@ -1,0 +1,107 @@
+.btn-arrow {
+    @include btn-arrow(80px, $orange);
+    &:hover {
+        border: 2px solid $orange;
+    }
+    margin-top: 50px;
+}
+
+.btn-arrow.btn-arrow--wborder {
+    @include btn-arrow(80px, $orange);
+    border: 2px solid $orange;
+    &:hover {
+        border: 2px solid $orange;
+    }
+    margin-top: 50px;
+}
+
+.btn-gallery {
+    border: none;
+    color: $black;
+    background: transparent;
+    font-size: 26px;
+    border-radius: 0px;
+    padding: 0px;
+    font-family: $Apercum;
+    position: relative;
+    border: 2px solid transparent;
+    width: 100px;
+    text-align: left;
+    box-shadow: none;
+
+    &.prev:before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        left: 3px;
+        top: 19px;
+        background: $black;
+        transition: .25s all ease;
+    }
+
+    &.next:before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        right: 3px;
+        top: 19px;
+        background: $black;
+        transition: .25s all ease;
+    }
+
+    &.next {
+        text-align: right;
+    }
+
+    &:hover:before {
+        width: 30px;
+        transition: .25s all ease;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &.disabled {
+        color: #ccc;
+        display: none;
+    }
+
+    &.disabled:hover {
+        cursor: not-allowed;
+    }
+}
+
+.btn-gallery.ng-hide {
+    visibility: hidden;
+    display: block !important;
+}
+
+a:focus,
+button:focus { 
+    outline: none; 
+}
+
+a:focus, 
+button:focus {
+    outline:none;
+}
+
+button::-moz-focus-inner,
+a::-moz-focus-inner {
+    border:0;
+}
+
+.mobile-menu-button {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    display: none;
+}
+
+.mobile-menu-button img {
+    width: 35px;
+    height: auto;
+}

@@ -1,0 +1,54 @@
+.top-menu {
+    margin: 0px auto 30px;
+}
+
+.desktop-nav ul {
+    list-style-type: disc;
+    padding: 0; 
+
+    & li {
+        margin: 0 20px;
+        list-style: disc;
+        display: list-item;
+        float: left;
+
+        & a {
+            color: $black;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: $Apercum;
+        }
+    }
+
+    & li:first-child {
+        list-style: none;
+        margin-left: 0px;
+    }
+}
+
+.desktop-nav ul li a:hover,
+.desktop-nav ul li a.active {
+    color: $orange;
+    text-decoration: underline;
+}
+
+.lang-anchor a,
+.lang-anchor span {
+    color: $black;
+    font-family: $ApercumMedium;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.lang-anchor a:hover, 
+.lang-anchor a:focus, {
+    color:$orange;
+    font-family: $ApercumMedium;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.lang-anchor a.active {
+    color: $orange;
+}
+

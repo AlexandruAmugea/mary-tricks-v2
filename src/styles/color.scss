@@ -1,0 +1,21 @@
+/* Colors file */
+
+/* Font colors */
+
+$white          : #ffffff;
+$black          : #000000;
+$whiter-black   : rgb(249,150,120);
+$orange         : #f99678;
+$pink           : #f2c1b2;
+
+/* Font family */
+
+$Apercum : "Apercu", serif;
+$ApercumMedium: "Apercu-Medium", serif;
+
+$Miller-Display: "Miller-Display", serif;
+$Miller-DisplayItalic: "Miller-DisplayItalic", serif;
+
+.orange {
+    color: $orange !important;
+}

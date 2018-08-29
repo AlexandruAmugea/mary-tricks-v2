@@ -1,0 +1,313 @@
+.logo {
+    padding: 15px 0;
+    width: 150px;
+    height: auto;
+}
+
+@media screen and (min-width: 768px){
+    .carousel-indicators {
+        bottom: -50px;
+    }
+}
+
+.carousel-indicators .active {
+    background: $orange;
+}
+
+.carousel-indicators li {
+    border-color: $black;
+    background: $black;
+}
+
+.carousel-indicators li.active {
+    border-color: $orange;
+    background: $orange;
+}
+
+/* START INSTAGRAM SECTION */
+#instagram {
+    margin-top: 115px;
+    margin-bottom: 75px;
+}
+
+#instagram .row {
+    margin: 0;
+}
+
+#instagram .row .col-xs-12 {
+    padding: 0;
+}
+
+.instagram-wrapper {
+    position: relative;
+}
+
+.instagram-box {
+    background: $white;
+    padding: 9px 10px;
+    display: inline-block;
+    position: absolute;
+    left: calc(50% - 155px);
+    top: calc(50% - 57.5px);
+}
+
+.instagram-cta {
+    border: 4px solid $black;
+    padding: 16px 70px;
+    font-family: "Apercu-Medium";
+    font-size: 18px;
+}
+
+.instagram-title {
+    font-family: "Miller-Display";
+}
+
+.instagram-address a{
+    color: $orange;
+}
+/* END INSTAGRAM SECTION */
+
+/* START HOMEPAGE BOTTOM SECTION*/
+#hp-bottom {
+    font-family: "Apercu-Medium";
+}
+
+#hp-bottom p {
+    font-size: 20px;
+    font-family: "Miller-Display";
+    margin: 20px 0px 40px 0px;
+}
+
+#hp-bottom p.icon-text {
+    color: $orange;
+    font-size: 20px;
+    font-family: "Apercu-Medium";
+    float: left;
+}
+
+.hp-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hp-list li {
+    padding: 6px 0;
+}
+
+.hp-bottom-img {
+    max-width: 100%;
+}
+
+.hp-bottom-icons {
+    float: left;
+    margin-right: 15px;
+    max-width: 100px;
+}
+/* END HOMEPAGE BOTTOM SECTION*/
+
+/* FOOTER */
+#footer {
+    background: $pink;
+    padding: 40px 0px 65px 0px;
+    font-family: "Apercu-Medium";
+    font-size: 14px;
+    margin-top: 115px;
+}
+
+#footer p {
+    color: $white;
+}
+
+#footer .row {
+    margin: 0;
+}
+
+#footer .row .col-xs-12 {
+    padding: 0;
+}
+
+.footer-menu li {
+    display: inline;
+    padding: 0 15px;
+}
+
+.footer-menu li:before {
+    content: "●";
+    color: $white;
+    position: relative; 
+    left: -15px;
+}
+
+.footer-menu li:first-child:before {
+    content: none;
+}
+
+
+.footer-menu li a {
+    color: $white;
+}
+
+.fa {
+    color: $white;
+    float: right;
+}
+/* FOOTER */
+
+/* MOBILE */
+@media screen and (min-width: 1199px) {
+    .hide1199 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .hide991, .hide1199 {
+        display: none;
+    }
+
+    .footer-menu li:first-child:before {
+        content: "●";
+        color: $white;
+        position: relative; 
+        left: -15px;
+    }
+
+    .footer-menu li {
+        display: block;
+    }
+
+    .footer-menu {
+        list-style-type: disc; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #hp-bottom {
+        text-align: center;
+    }
+
+    #hp-bottom .icon-title {
+        text-align: center;
+    }
+
+    .hp-bottom-icons, #hp-bottom p.icon-text {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .hp-bottom-img {
+        max-width: 60%;
+    }
+
+    .hp-list {
+        margin-top: 40px;
+    }
+
+    .hp-bottom-right {
+        margin-top: 60px;
+    }
+}
+/* MOBILE */
+
+.slide-insta-feed {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.slide-insta-feed li {
+    display: inline-block;
+    width: 12.5%;
+}
+
+.slide-insta-feed li img {
+    width: 100%;
+    height: auto;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid $black;
+}
+
+body.contact {
+    background: #e1e3e3;
+    background-size: 100%;
+}
+
+body.contact #instagram {
+    margin-top: 0px;
+}
+
+.contact h2 {
+    font-size: 49px;
+    font-family: $Miller-Display;
+    margin-bottom: 30px;
+    margin-top: 180px;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: $Miller-Display;
+}
+
+.contact #instagram {
+    margin-bottom: 0;
+}
+
+.contact #footer {
+    margin-top: 0;
+}
+
+.contact h4 {
+    font-family: $ApercumMedium;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact ul.contact-list {
+    padding: 0;
+}
+
+.contact ul.contact-list li {
+    float: left;
+    list-style: none;
+    padding-left: 15px;
+    font-size: 14px;
+    font-family: $ApercumMedium;
+}
+
+.contact ul.contact-list li:first-child {
+    padding: 0;
+}
+
+.social-icons-fixed {
+    position: fixed;
+    right: 15px;
+    top: calc(50% - 75px);
+    z-index: 10000;
+}
+
+.social-icons-fixed ul {
+    list-style: none;
+}
+
+.social-icons-fixed ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons-fixed ul li img {
+    width: 32px;
+    height: 32px;
+}
+
+.social-icons-fixed ul li a:hover img{
+    transition: .25s all ease;
+    transform: rotate(360deg);
+}
+
+.desktop-nav .logo {
+    display: none;
+}

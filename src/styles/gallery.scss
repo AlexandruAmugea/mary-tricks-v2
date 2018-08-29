@@ -1,0 +1,43 @@
+.img-gallery-thumbnail,
+.img-gallery-preview {
+    width: 100%;
+    height: auto;
+}
+
+.img-gallery-thumbnail {
+    margin-bottom: 30px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.preview-wrapper {
+    max-height: 555px;
+    overflow: hidden;
+}
+
+.loader-image {
+    min-height: 400px;
+    padding: 100px 0;
+}
+
+.loader-image img {
+    -webkit-animation-name: logoColorChange; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: logoColorChange;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes logoColorChange {
+    from {opacity: 1; transition: .5s all ease;}
+    to {opacity: 0.25; transition: .5s all ease;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {opacity: 1; transition: .5s all ease;}
+    to {opacity: 0.25; transition: .5s all ease;}
+}

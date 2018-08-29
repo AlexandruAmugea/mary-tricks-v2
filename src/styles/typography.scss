@@ -1,0 +1,23 @@
+ body {
+    font-family: $Miller-Display;
+}
+
+h2 {
+    font-family: $Miller-Display;
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+h2 em {
+    font-family: $Miller-DisplayItalic;
+    text-decoration: underline;
+}
+
+a {
+    color: $black;
+}
+
+a:hover {
+    color: $orange;
+}
+
