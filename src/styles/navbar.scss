@@ -1,10 +1,24 @@
 .top-menu {
-    margin: 0px auto 30px;
+    margin: 40px auto;
+}
+
+a.anchor-contact {
+    float: right;
+    font-family: "Apercu", serif;
+    font-size: 16px;
+    margin-top: -2px;
+}
+
+a.anchor-contact img {
+    width: 14px;
+    height: auto;
 }
 
 .desktop-nav ul {
     list-style-type: disc;
-    padding: 0; 
+    padding: 0;
+    max-width: 234px;
+    margin: 0 auto;
 
     & li {
         margin: 0 20px;
@@ -41,7 +55,7 @@
 }
 
 .lang-anchor a:hover, 
-.lang-anchor a:focus, {
+.lang-anchor a:focus {
     color:$orange;
     font-family: $ApercumMedium;
     font-size: 16px;
