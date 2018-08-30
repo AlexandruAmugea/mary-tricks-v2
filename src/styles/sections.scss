@@ -26,8 +26,7 @@
 
 /* START INSTAGRAM SECTION */
 #instagram {
-    margin-top: 115px;
-    margin-bottom: 75px;
+    margin: 0;
 }
 
 #instagram .row {
@@ -107,15 +106,25 @@
 
 /* FOOTER */
 #footer {
-    background: $pink;
-    padding: 40px 0px 65px 0px;
-    font-family: "Apercu-Medium";
+    background: #ffece1;
+    padding: 40px 0 65px 0;
+    font-family: "Apercu-Medium", sans-serif;
     font-size: 14px;
-    margin-top: 115px;
+
+    & .fa {
+        float: none;
+        color: #000;
+    }
+
+    & h5 {
+        font-size: 24px;
+    }
 }
 
 #footer p {
-    color: $white;
+    color: $black;
+    font-family: "Apercu", sans-serif;
+    font-size: 16px;
 }
 
 #footer .row {
