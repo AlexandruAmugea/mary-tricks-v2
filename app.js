@@ -13,4 +13,30 @@ app.get('/', function(req, res){
     res.sendFile(__dirname + "/dist/index.html");
 });
 
+app.get('/contact', function(req, res){
+    res.sendFile(__dirname + "/dist/index.html");
+});
+
+app.get('/portfolio', function(req, res){
+    res.sendFile(__dirname + "/dist/index.html");
+});
+
+app.get('/info', function(req, res){
+    res.sendFile(__dirname + "/dist/index.html");
+});
+
+app.get('/lash-extension', function(req, res){
+    res.sendFile(__dirname + "/dist/index.html");
+});
+
+app.get('/lash-botox', function(req, res){
+    res.sendFile(__dirname + "/dist/index.html");
+});
+
+app.get('/brows', function(req, res){
+    res.sendFile(__dirname + "/dist/index.html");
+});
+
+
+
 app.listen(port);

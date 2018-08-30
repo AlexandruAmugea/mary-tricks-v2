@@ -4,7 +4,8 @@
   "description": "Mary's Tricks",
   "scripts": {
     "build": "webpack --config webpack-prod.config.js --colors",
-    "dev": "webpack-dev-server --open --config webpack-dev.config.js --watch --colors"
+    "dev": "webpack-dev-server --open --config webpack-dev.config.js --watch --colors",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",

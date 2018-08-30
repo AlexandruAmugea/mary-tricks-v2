@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MaryTricks">
+<head>
+  <meta charset="UTF-8">
+  <title>Mary's Tricks</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800,900" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header ng-controller="MainCtrl">
+  <div id="background-wrapper" ng-click="closeMenu($event)"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="text-center">
+          <a ng-click="openMenu()" class="mobile-menu-button"><img src="images/menu.png" alt=""></a>
+          <a href="#/"><img src="images/logo.png" class="logo" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <hr>
+      </div>
+    </div>
+    <div class="top-menu">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8">
+          <nav class="desktop-nav text-center">
+            <a href="#/"><img src="images/logo.png" class="logo" alt=""></a>
+            <ul>
+              <li><a href="#/" class="active">Home</a></li>
+              <li><a href="#/portfolio">Portfolio</a></li>
+              <li><a href="#/contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- <div class="col-sm-4 col-xs-12">
+          <div class="pull-right">
+            <div class="lang-anchor">
+                <a href="" class="active">RO</a>
+                <span>/</span>
+                <a href="">EN</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</header>
+<section class="social-icons-fixed">
+  <ul>
+    <li><a target="_blank" href="https://api.whatsapp.com/send?phone=0040775614669"><img src="images/social-1.png" alt=""></a></li>
+    <li><a href=""><img src="images/social-2.png" alt=""></a></li>
+    <li><a target="_blank" href="https://urlgeni.us/instagram/MPZi"><img src="images/social-3.png" alt=""></a></li>
+  </ul>
+</section>
+<div ng-view></div>
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3">
+        <p>Mary's Tricks. &copy;2017</p>
+      </div>
+      <div class="col-xs-7">
+        <ul class="footer-menu">
+          <li><a href="#/" class="active">Home</a></li>
+          <li><a href="#/portfolio">Portfolio</a></li>
+          <li><a href="#/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-2"><i class="fa fa-heart" aria-hidden="true"></i></div>
+    </div>
+  </div>
+</section>
+</body>
+</body>
+</html>
