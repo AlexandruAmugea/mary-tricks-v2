@@ -5,13 +5,15 @@
 a.anchor-contact {
     float: right;
     font-family: "Apercu", serif;
-    font-size: 16px;
-    margin-top: -2px;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 a.anchor-contact img {
     width: 14px;
     height: auto;
+    margin-top: -8px;
+    margin-right: 5px;
 }
 
 .desktop-nav ul {
@@ -51,7 +53,10 @@ a.anchor-contact img {
     color: $black;
     font-family: $ApercumMedium;
     font-size: 16px;
-    text-transform: uppercase;
+    text-transform: none;
+}
+.lang-anchor span {
+    padding: 0 3px;
 }
 
 .lang-anchor a:hover, 
@@ -59,10 +64,10 @@ a.anchor-contact img {
     color:$orange;
     font-family: $ApercumMedium;
     font-size: 16px;
-    text-transform: uppercase;
 }
 
 .lang-anchor a.active {
     color: $orange;
+    text-decoration: underline;
 }
 

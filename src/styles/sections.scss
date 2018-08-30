@@ -311,3 +311,51 @@ body.contact #instagram {
 .desktop-nav .logo {
     display: none;
 }
+
+.mt-sect-schedule {
+    & .mt-sect-schedule--background {
+        background-color: lightblue; /* fallback */
+        background-image: -webkit-linear-gradient(left, #ffece1 50%, #ddede9 50.001%);
+        background-image:    -moz-linear-gradient(left, #ffece1 50%, #ddede9 50.001%);
+        background-image:      -o-linear-gradient(left, #ffece1 50%, #ddede9 50.001%);
+        background-image:         linear-gradient(to right, #ffece1 50%, #ddede9 50.001%);
+    }
+
+    h3 {
+        font-family: "Miller-Display", serif;
+        font-size: 37px;
+        line-height: 1.2;
+        & em {
+            font-family: "Miller-DisplayItalic", serif;
+            text-decoration: underline;
+        }
+    }
+
+    & .mt-sect-schedule--left {
+        background: #ffece1;
+        padding:75px 45px 75px 0;
+    }
+
+    & .mt-sect-schedule--right {
+        background: #ddede9;
+        padding:75px 45px 75px 45px;
+    }
+
+    & .img-location {
+        width: 24px;
+        height: auto;
+        float: left;
+        margin-right: 20px;
+    }
+
+    & h4 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-family: "Miller-DisplayItalic", sans-serif;
+    }
+
+    & p {
+        font-size: 18px;
+        font-family: "Apercu-Medium", sans-serif;
+    }
+}

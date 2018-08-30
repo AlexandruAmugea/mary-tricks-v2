@@ -4,6 +4,12 @@
         border: 2px solid $orange;
     }
     margin-top: 50px;
+
+    &.btn-arrow-white {
+        background: $white;
+        border: none;
+        border-radius: 8px;
+    }
 }
 
 .btn-arrow.btn-arrow--wborder {
