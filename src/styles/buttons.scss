@@ -111,3 +111,30 @@ a::-moz-focus-inner {
     width: 35px;
     height: auto;
 }
+
+.btn {
+    &.btn-appointment {
+        width: 49%;
+        margin-bottom: 5px;
+        padding: 15px 0;
+        background-color: $white;
+        border-radius: 0;
+        box-shadow: none;
+        
+        &.active {
+            background-color: #fbb09a;
+        }
+
+        & h6 {
+            font-family: "Apercu-Medium", sans-serif;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        & p {
+            font-family: "Miller-Display", sans-serif;
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+}

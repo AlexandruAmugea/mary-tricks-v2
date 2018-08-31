@@ -1,0 +1,47 @@
+/* Jquery UI Datepicker styles */
+
+.ui-datepicker-calendar {
+  padding: 20px !important;
+  & thead tr th {
+    padding: 13px 15px;
+    background-color: #e1e1e1;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    font-family: "Apercu Medium", sans-serif;
+    font-size: 16px;
+  }
+
+  & thead tr th:last-child {
+    border-right: none;
+  }
+
+  & tbody tr td {
+    padding: 13px 15px;
+    background-color: #ffece1;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    font-family: "Apercu Medium", sans-serif;
+    font-size: 16px;
+
+    & a {
+      font-family: "Apercu Medium", sans-serif;
+      font-size: 16px;
+    }
+  }
+
+  & tbody tr td:last-child {
+    border-right: none;
+  }
+  
+  & tbody tr td.ui-state-disabled {
+    background-color: #cbcbcb;
+  }
+
+  & tbody tr td.ui-datepicker-current-day {
+    background: #fbb09a;
+  }
+  .ui-widget-header {
+    display: none !important;
+    visibility: hidden;
+  }
+}

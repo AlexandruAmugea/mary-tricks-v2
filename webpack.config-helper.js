@@ -15,7 +15,8 @@ module.exports = (options) => {
     devtool: options.devtool,
     entry: {
         'dist/index': './src/scripts/index',
-        'dist/menu': './src/scripts/menu'
+        'dist/menu': './src/scripts/menu',
+        'dist/form': './src/scripts/form'
     },
     output: {
       path: dest,
@@ -28,7 +29,7 @@ module.exports = (options) => {
         }
       }),
       new HtmlWebpackPlugin({
-        template: './src/index.html'
+        template: './views/appointment.html'
       }),
       new CopyWebpackPlugin([
         { from: 'src/images', to: 'images' },
@@ -54,7 +55,8 @@ module.exports = (options) => {
   if (options.isProduction) {
     webpackConfig.entry = {
         'index': './src/scripts/index',
-        'menu': './src/scripts/menu'
+        'menu': './src/scripts/menu',
+        'dist/form': './src/scripts/form'
     };
 
     webpackConfig.plugins.push(
