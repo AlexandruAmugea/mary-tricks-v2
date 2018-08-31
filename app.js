@@ -14,29 +14,31 @@ app.get('/', function(req, res){
 });
 
 app.get('/contact', function(req, res){
-    res.sendFile(__dirname + "/dist/index.html");
+    res.sendFile(__dirname + "/dist/views/contact.html");
 });
 
 app.get('/portfolio', function(req, res){
-    res.sendFile(__dirname + "/dist/index.html");
+    res.sendFile(__dirname + "/dist/views/portfolio.html");
 });
 
 app.get('/info', function(req, res){
-    res.sendFile(__dirname + "/dist/index.html");
+    res.sendFile(__dirname + "/dist/views/info.html");
 });
 
 app.get('/lash-extension', function(req, res){
-    res.sendFile(__dirname + "/dist/index.html");
+    res.sendFile(__dirname + "/dist/views/lash-extension.html");
 });
 
 app.get('/lash-botox', function(req, res){
-    res.sendFile(__dirname + "/dist/index.html");
+    res.sendFile(__dirname + "/dist/views/lash-botox.html");
 });
 
 app.get('/brows', function(req, res){
-    res.sendFile(__dirname + "/dist/index.html");
+    res.sendFile(__dirname + "/dist/views/brows.html");
 });
 
-
+app.get('/thank-you', function(req, res){
+    res.sendFile(__dirname + "/dist/views/thank-you.html");
+});
 
 app.listen(port);

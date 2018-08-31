@@ -473,3 +473,58 @@ body.contact #instagram {
         }
     }
 }
+
+.mt-sect-orange {
+    background: #ffece1;
+    padding: 40px 0;
+    text-align: center;
+
+    & h3 {
+        font-family: "Miller-Display", sans-serif;
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+
+    & h5 {
+        font-family: "Apercu-Medium", sans-serif;
+        font-size: 22px;
+    }
+}
+
+.mt-sect-directions {
+    text-align: center;
+    padding: 40px 0;
+    & h6 {
+        font-family: "Miller-Display", sans-serif;
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    & p {
+        font-family: "Apercu-Medium", sans-serif;
+        font-size: 14px;
+    }
+
+    & .map-ty {
+        margin: 30px auto;
+    }
+}
+
+.mt-sect-grey {
+    background: #ebebeb;
+    padding: 40px 0;
+    text-align: center;
+
+    & h4 {
+        font-family: "Apercu-Medium", sans-serif;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    & p {
+        font-family: "Apercu-Medium", sans-serif;
+        font-size: 14px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}

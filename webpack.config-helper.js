@@ -13,12 +13,13 @@ module.exports = (options) => {
 
   let webpackConfig = {
     devtool: options.devtool,
-    entry: [
-      './src/scripts/index'
-    ],
+    entry: {
+        'dist/index': './src/scripts/index',
+        'dist/menu': './src/scripts/menu'
+    },
     output: {
       path: dest,
-      filename: 'bundle.js'
+      filename: '[name].js'
     },
     plugins: [
       new Webpack.DefinePlugin({
@@ -51,7 +52,10 @@ module.exports = (options) => {
     };
 
   if (options.isProduction) {
-    webpackConfig.entry = ['./src/scripts/index'];
+    webpackConfig.entry = {
+        'index': './src/scripts/index',
+        'menu': './src/scripts/menu'
+    };
 
     webpackConfig.plugins.push(
       new Webpack.optimize.UglifyJsPlugin({
