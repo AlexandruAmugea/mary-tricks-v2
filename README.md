@@ -1,10 +1,22 @@
-# Mary-s-Tricks
-Mary's Tricks
+# Mary's Tricks ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
-#Required Node Js 6.x
+Mary's Tricks is the presentation site for Mary's Tricks
 
-Npm install
+## Installation
 
-Npm run dev - for development mode
+### Requirements
+* NodeJS 8+
 
-Npm run build - build solution for production
+`$ npm install`
+
+## Usage
+
+```javascript
+npm run dev
+npm run build
+```
+
+
+## Deployment
+Deployment is made to Heroku, development server: https://maritrycks-dev.herokuapp.com
+
