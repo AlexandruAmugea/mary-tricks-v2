@@ -52,6 +52,7 @@
     "raw-loader": "^0.5.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
+    "toastr": "^2.1.4",
     "webpack": "^3.5.6",
     "webpack-dev-server": "^2.7.1"
   },
@@ -59,6 +60,7 @@
     "angular": "1.4.0",
     "angular-route": "1.4.0",
     "babel-polyfill": "^6.9.0",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.8"
   }
 }

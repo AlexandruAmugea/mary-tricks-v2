@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+let sendMail = require('./services/sendEmail');
 
 const port = process.env.PORT || 8080;
 
@@ -39,6 +40,10 @@ app.get('/brows', function(req, res){
 
 app.get('/thank-you', function(req, res){
     res.sendFile(__dirname + "/dist/views/thank-you.html");
+});
+
+app.post('/contact', function(req, res){
+    sendMail(req, res);
 });
 
 app.listen(port);

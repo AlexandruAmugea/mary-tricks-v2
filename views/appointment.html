@@ -64,19 +64,21 @@
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                 <h4>How can we contact you</h4>
-                <form action="/appointment" method="post">
+                <form action="/contact" method="post" id="booking-form">
                     <div class="form-group">
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="name" placeholder="Your name">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your name" required>
                             </div>
                             <div class="col-sm-6">
-                                <input type="tel" class="form-control" id="phone" placeholder="Phone">
+                                <input type="tel" name="phone" class="form-control" id="phone" placeholder="Phone" required>
                             </div>
                         </div>
                     </div>
                     <h4>What ca we do for you</h4>
                     <input type="hidden" value="" id="services" name="services">
+                    <input type="hidden" value="" id="time" name="time">
+                    <input type="hidden" value="" id="date" name="date">
                     <div class="row">
                         <div class="col-xs-12">
                             <button class="btn btn-appointment" type="button">
