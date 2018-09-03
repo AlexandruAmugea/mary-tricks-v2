@@ -14,7 +14,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/contact', function(req, res){
-    res.sendFile(__dirname + "/dist/views/contact.html");
+    res.sendFile(__dirname + "/dist/views/appointment.html");
 });
 
 app.get('/portfolio', function(req, res){

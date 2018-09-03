@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="MaryTricks">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Mary's Tricks</title>
@@ -19,7 +19,7 @@
             <div class="col-xs-12">
                 <div class="text-center">
                     <a ng-click="openMenu()" class="mobile-menu-button"><img src="images/menu.png" alt=""></a>
-                    <a href="#/"><img src="images/logo.png" class="logo" alt=""></a>
+                    <a href="/"><img src="images/logo.png" class="logo" alt=""></a>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <nav class="desktop-nav text-center">
-                        <a href="#/"><img src="images/logo.png" class="logo" alt=""></a>
+                        <a href="/"><img src="images/logo.png" class="logo" alt=""></a>
                         <ul>
                             <li><a href="/" class="active">Home</a></li>
                             <li><a href="/portfolio">Portfolio</a></li>
@@ -103,7 +103,52 @@
                     </div>
                     <h4>Appointment Time</h4>
                     <p class="form-date"><span class="form-date--month"></span><span class="form-date--time"></span></p>
-                    <div id="calendar"></div>
+                    <div class="mt-sect-white">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-sm-offset-1">
+                                <h3>Date</h3>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div id="calendar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-5 col-sm-offset-2">
+                                <h3>Time</h3>
+                                <ul class="form--time-picker">
+                                    <li>10:00</li>
+                                    <li>14:00</li>
+                                    <li>10:30</li>
+                                    <li>14:30</li>
+                                    <li>11:00</li>
+                                    <li>15:00</li>
+                                    <li>11:30</li>
+                                    <li>15:30</li>
+                                    <li>12:00</li>
+                                    <li>16:00</li>
+                                    <li>12:30</li>
+                                    <li>16:30</li>
+                                    <li>13:00</li>
+                                    <li>17:00</li>
+                                    <li>13:30</li>
+                                    <li>17:30</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-sect-orange" style="margin-top: 0">
+                        <h4>Are you coming with a friend?</h4>
+                        <label class="custom__checkbox">Yes, and I get a discount for it!
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-arrow btn-arrow-white" style="margin-bottom: 50px;">
+                        <span class="text">Book an Appoitment</span>
+                        <span class="arrow-wrapper">
+                            <span class="arrow">&gt;</span>
+                        </span>
+                    </button>
                 </form>
             </div>
         </div>
@@ -116,7 +161,6 @@
         <li><a target="_blank" href="https://urlgeni.us/instagram/MPZi"><img src="images/social-3.png" alt=""></a></li>
     </ul>
 </section>
-<div ng-view></div>
 <section id="footer">
     <div class="container">
         <div class="row">
@@ -156,5 +200,6 @@
     </div>
 </section>
 <script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript" src="form.js"></script>
 </body>
 </html>

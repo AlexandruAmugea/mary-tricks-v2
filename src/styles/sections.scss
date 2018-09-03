@@ -516,9 +516,9 @@ body.contact #instagram {
     text-align: center;
 
     & h4 {
-        font-family: "Apercu-Medium", sans-serif;
-        font-size: 24px;
-        margin-bottom: 30px;
+        font-family: "Miller-Display", sans-serif;
+        font-size: 32px;
+        margin: 60px 0 30px;
     }
 
     & p {
@@ -527,4 +527,19 @@ body.contact #instagram {
         max-width: 400px;
         margin: 0 auto;
     }
+}
+
+.mt-sect-white {
+    background: $white;
+    padding: 50px 0;
+    & h3 {
+        margin: 0 0 20px;
+        font-family: "Apercu-Medium", sans-serif;
+        font-size: 24px;
+        text-align: left;
+    }
+}
+
+.mt-sect-grey .mt-sect-orange {
+    padding: 5px 0 40px;
 }

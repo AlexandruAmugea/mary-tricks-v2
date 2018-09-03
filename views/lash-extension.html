@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="MaryTricks">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Mary's Tricks</title>
@@ -9,6 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800,900" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bundle.css" rel="stylesheet"></head>
 </head>
 <body>
 <header ng-controller="MainCtrl">
@@ -18,7 +19,7 @@
             <div class="col-xs-12">
                 <div class="text-center">
                     <a ng-click="openMenu()" class="mobile-menu-button"><img src="images/menu.png" alt=""></a>
-                    <a href="#/"><img src="images/logo.png" class="logo" alt=""></a>
+                    <a href="/"><img src="images/logo.png" class="logo" alt=""></a>
                 </div>
             </div>
         </div>
@@ -35,7 +36,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <nav class="desktop-nav text-center">
-                        <a href="#/"><img src="images/logo.png" class="logo" alt=""></a>
+                        <a href="/"><img src="images/logo.png" class="logo" alt=""></a>
                         <ul>
                             <li><a href="/" class="active">Home</a></li>
                             <li><a href="/portfolio">Portfolio</a></li>
@@ -59,118 +60,7 @@
         <li><a target="_blank" href="https://urlgeni.us/instagram/MPZi"><img src="images/social-3.png" alt=""></a></li>
     </ul>
 </section>
-<div class="mt-sect-schedule">
-    <div class="mt-sect-schedule--background">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-7">
-                    <div class="mt-sect-schedule--left">
-                        <h3>Try a new style to highlight your natural beauty through. <em>Brow, Eye lashes care and other Beauty Services</em> at Mary's Tricks.</h3>
-                        <a href="/contact" class="btn btn-arrow btn-arrow-white">
-                            <span class="text">Book an Appoitment</span>
-                            <span class="arrow-wrapper">
-                <span class="arrow">&gt;</span>
-            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-5">
-                    <div class="mt-sect-schedule--right">
-                        <h3>Working Hours</h3>
-                        <p>Monday - Friday </p>
-                        <h4>10:00 - 18:00</h4>
-                        <br>
-                        <p>Saturday - Sunday</p>
-                        <h4>Closed</h4>
-                        <p><img src="images/location.png" class="img-location" />Strada Erou Iancu Nicolae 29
-                            Voluntari 077190. Metrou: Pipera</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="mt-sect-services">
-    <h3 class="text-center">Services</h3>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-4">
-                <h5>Lash extension</h5>
-                <h6>30 minutes - 250 lei</h6>
-                <img src="images/services/1.jpg" alt="" class="img-responsive">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                <div class="mt-sect-services--cta">
-                    <a href="" class="mt-sect-services--cta__portfolio"><img src="images/services/portfolio.png" alt="">See Portfolio</a>
-                    <a href="" class="mt-sect-services--cta__book"><img src="images/services/book.png" alt="">Book</a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-                <h5>Lash extension</h5>
-                <h6>30 minutes - 250 lei</h6>
-                <img src="images/services/2.jpg" alt="" class="img-responsive">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                <div class="mt-sect-services--cta">
-                    <a href="" class="mt-sect-services--cta__portfolio"><img src="images/services/portfolio.png" alt="">See Portfolio</a>
-                    <a href="" class="mt-sect-services--cta__book"><img src="images/services/book.png" alt="">Book</a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-                <h5>Lash extension</h5>
-                <h6>30 minutes - 250 lei</h6>
-                <img src="images/services/3.jpg" alt="" class="img-responsive">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                <div class="mt-sect-services--cta">
-                    <a href="" class="mt-sect-services--cta__portfolio"><img src="images/services/portfolio.png" alt="">See Portfolio</a>
-                    <a href="" class="mt-sect-services--cta__book"><img src="images/services/book.png" alt="">Book</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="mt-sect-testimonials">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
 
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <h3 class="text-center">Testimonials</h3>
-                    <h4 class="slides-number text-center"></h4>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="images/testimonials/1.png" alt="Make up">
-                            <h5>@azagabriela</h5>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                        </div>
-                        <div class="item">
-                            <img src="images/testimonials/1.png" alt="Make up">
-                            <h5>@azagabriela</h5>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                        </div>
-
-                        <div class="item">
-                            <img src="images/testimonials/1.png" alt="Make up">
-                            <h5>@azagabriela</h5>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-                        </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a href="" class="left carousel-control" data-target="#myCarousel" data-slide="prev">
-                        <img src="images/testimonials/arrow--left.png">
-                    </a>
-                    <a href="" class="right carousel-control" data-target="#myCarousel" data-slide="next">
-                        <img src="images/testimonials/arrow-right.png">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div ng-view></div>
 <section id="footer">
     <div class="container">
         <div class="row">

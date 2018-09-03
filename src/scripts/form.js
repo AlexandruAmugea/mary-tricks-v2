@@ -1,8 +1,16 @@
 import datepickerFactory from 'jquery-datepicker';
-
 datepickerFactory($);
 
 (function(){
+
+    const MONTH_NAMES = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+    const MIN_DATE = new Date();
+    const MAX_DATE = new Date((new Date()).setMonth((new Date()).getMonth() + 1));
+    const TIME_CONTAINER = document.querySelector('.form-date--time');
+    const HOURS_ELEMENTS = document.querySelectorAll('.form--time-picker li');
+
     /* Form selection buttons
     * Adds buttons h6 to an input hidden field to be submitted
     * */
@@ -35,23 +43,32 @@ datepickerFactory($);
     * Adds date and time to an input field
     * */
 
-    const monthNames = ["January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"
-    ];
+    document.querySelector('.form-date--month').innerHTML = `${MONTH_NAMES[MIN_DATE.getMonth()]} ${MIN_DATE.getDate()}`;
 
     $( "#calendar" ).datepicker({
         beforeShowDay: $.datepicker.noWeekends,
-        "hideIfNoPrevNext": true,
+        prevText: "<",
+        nextText: ">",
+        weekHeader: "",
+        minDate: MIN_DATE,
+        maxDate: MAX_DATE,
         onSelect: function() {
             let dateObject = $(this).datepicker('getDate');
-            console.log(dateObject);
-            document.querySelector('.form-date--month').innerHTML = `${monthNames[dateObject.getMonth()]} 
+            document.querySelector('.form-date--month').innerHTML = `${MONTH_NAMES[dateObject.getMonth()]} 
             ${dateObject.getDate()}`;
+            $('.ui-datepicker-title').hide();
         }
     });
 
-    $(".ui-widget-header").css({
-        display: 'none'
+    // Time picker
+    HOURS_ELEMENTS.forEach((elem, i)=>{
+        elem.addEventListener('click', function(){
+            HOURS_ELEMENTS.forEach((elem)=>{
+              elem.classList.remove('active');
+            });
+            elem.classList.add('active');
+            TIME_CONTAINER.innerHTML = `, ${elem.innerHTML}`;
+        });
     });
 
 })();

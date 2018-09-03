@@ -29,7 +29,7 @@ module.exports = (options) => {
         }
       }),
       new HtmlWebpackPlugin({
-        template: './views/appointment.html'
+        template: './views/index.html'
       }),
       new CopyWebpackPlugin([
         { from: 'src/images', to: 'images' },
@@ -56,7 +56,7 @@ module.exports = (options) => {
     webpackConfig.entry = {
         'index': './src/scripts/index',
         'menu': './src/scripts/menu',
-        'dist/form': './src/scripts/form'
+        'form': './src/scripts/form'
     };
 
     webpackConfig.plugins.push(
