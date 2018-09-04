@@ -43,7 +43,7 @@ app.get('/thank-you', function(req, res){
 });
 
 app.post('/contact', function(req, res){
-    sendMail(req, res);
+    res.redirect('/thank-you');
 });
 
 app.listen(port);
